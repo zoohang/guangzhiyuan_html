@@ -1,0 +1,376 @@
+@charset "utf-8";
+body,ul,div,p,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+a,a:hover,a:active,a:visited{text-decoration: none;color: #333;}
+li{list-style: none;}
+body{
+	
+}
+.top{
+	width: 100%;
+}
+.top_bar{
+	background: url('../images/index_68.png') no-repeat;
+	background-position: center;
+	height: 108px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.w1600{
+	/*width: 1600px;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+.w1000{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.logo{
+	float: left;
+	margin: 20px 0;
+}
+.login{
+	overflow: hidden;
+}
+.login_box{
+    width: 300px;
+    overflow: hidden;
+    background: url('../images/index_67.png');
+    float: right;
+    color: #fff;
+    height: 34px;
+    font-size: 13px;
+    line-height: 34px;
+}
+.login_welcome{
+	float: left;
+	margin-left: 10px;
+}
+.login_login{
+	float: right;
+	margin-right: 10px;
+}
+.login_login a{
+	color: #fff;
+	font-size: 13px;
+    line-height: 34px;
+}
+.login_cart{
+	float: right;
+}
+.top_right{
+	float: right;
+}
+.nav_tag_hot{
+    position: absolute;
+    left: 46px;
+    top: 5px;
+}
+.nav{
+	overflow: hidden;
+	margin: 15px 0 20px 0;
+}
+.nav ul li{
+	    float: left;
+    margin-right: 20px;
+	    font-size: 15px;
+    font-family: 微软雅黑;
+        position: relative;
+    height: 40px;
+    line-height: 54px;
+
+}
+.nav ul li:last-child{
+	margin-right: 0;
+}
+.nav ul li a{
+color: #fff;
+}
+.nav ul li a:hover{
+color: #f97d01;
+}
+.news_index{
+	margin-top: 20px; 
+}
+.news_bar{
+	width: 316px;
+	float: left;
+	margin-right: 26px;
+}
+.news_bar:nth-child(3){
+	margin-right: 0;
+}
+.news_cat_title_font{
+	    float: left;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f97d01;
+    color: #f97d01;
+        font-weight: bold;
+}
+.news_more{
+	    float: right;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333333;
+    color: #333333;
+    text-align: right;
+    width: 73%;
+    margin-right: 1px;
+}
+.news_more a{
+	font-size: 14px;
+}
+.news_first img{
+	margin: 10px 0;
+}
+.news_cat_title_font img{
+	  margin-bottom: 10px;
+    margin-right: 10px;
+}
+.news_time,.news_content{
+	color: #989898;
+	font-size: 13px;
+	font-family: 微软雅黑;
+}
+.news_title{
+	    margin: 5px 0;
+    font-family: 微软雅黑;
+    font-size: 15px
+}
+.news_title img{
+	    margin-bottom: 4px;
+    margin-right: 7px;
+}
+.news_other .news_title{
+	font-family: 新宋体;
+    font-size: 14px;
+}
+.news_first,.news_other{
+	    border-bottom: 1px dotted #888;
+	    padding-bottom: 10px;
+	    margin-bottom: 5px;
+}
+.news_title a:hover{
+	color: #f97d01;
+}
+.chanpin_index{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.chanpin_desc{
+	float: left;
+	width: 49%;
+}
+.gean_desc{
+	float: right;
+	width: 49%;
+}
+.chanpin_desc .news_more,.gean_desc .news_more{
+	width: 83%;
+}
+.gean_row{
+	width: 240px;
+	float: left;
+	margin-right: 10px;
+	border-bottom: 1px dotted #888;
+	    padding: 10px 0;
+}
+.gean_info a img{
+	float: left;
+	margin-right: 5px;
+}
+.gean_info .news_title{
+	font-size: 12px;
+}
+.gean_info .news_content{
+	font-size: 12px;
+}
+.gean_row:nth-child(2){
+	margin-right: 0;
+}
+.gean_row:nth-child(4){
+	margin-right: 0;
+}
+.chanpin_detail{
+	float: left;
+	margin-right: 12px;
+	margin-top: 10px;
+}
+.chanpin_title{
+	text-align: center;
+	font-family: 微软雅黑;
+	margin-top: 10px;
+}
+.chanpin_detail:nth-child(3){
+	margin-right: 0;
+}
+.w100{
+	width: 100%;
+}
+.tuijian_index{
+	background-color: #e7e7e7;
+}
+.tuijian_part{
+	width: 196px;
+	float: left;
+	text-align: center;
+	    padding: 40px 0;
+	    margin-right: 5px;
+}
+.tuijian_part:nth-child(5){
+	margin-right: 0;
+}
+.gray_bar{
+	width: 100%;
+	height: 3px;
+	background-color: #999999;
+	margin: 10px 0;
+}
+.tuijian_title{
+	    font-size: 13px;
+    font-family: 微软雅黑;
+    color: #f87d01;
+    margin-top: 20px;
+}
+.tuijian_content{
+	   font-size: 13px;
+    font-family: 微软雅黑;
+    color: #aaa;
+    margin-top: 20px;
+}
+.footer-bg{
+	background: url('../images/index_66.png') no-repeat;
+	background-position: center;
+	height: 80px;
+	position: relative;
+}
+.lianxi{
+	margin-top: 20px;
+	overflow: hidden;
+}
+.lianxi ul li{
+	    float: left;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.copyright{
+	font-size: 14px;
+    margin-top: 10px;
+}
+.help_index{
+	text-align: right;
+	font-size: 13px;
+	color: #999999;
+}
+.help_index a{
+	font-size: 13px;
+	color: #999999;
+	font-family: 微软雅黑;
+}
+.help_index a:hover{
+	color: #f97d01;
+}
+.online_zixun{
+	position: absolute;
+	left: 95%;
+	top: -600px;
+	width: 40px;
+}
+
+/*********登陆&注册页面css***********/
+.reg_main{
+	margin: 20px 0;
+}
+.reg_body{
+	height: 535px;
+	border: 1px solid #d6d6d6;
+}
+.reg_left{
+	    float: left;
+    padding-right: 60px;
+    margin: 86px 0 86px 80px;
+    border-right: 1px solid #bfbfbf;
+}
+.reg_right{
+	float: right;
+	width: 45%;
+	margin-top: 80px;
+}
+.page_title{
+	font-size: 30px;
+	color: #f97d01;
+	font-family: 黑体;
+	margin-bottom: 20px;
+}
+.zhanghu{
+    width: 310px;
+    height: 30px;
+    margin-bottom: 10px;
+    background: url('../images/reg_06.png') no-repeat;
+    background-position: 7px;
+    padding-left: 40px;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    border: 1px solid #ddd;
+}
+.mima{
+    width: 310px;
+    height: 30px;
+    margin-bottom: 10px;
+    background: url('../images/reg_09.png') no-repeat;
+    background-position: 7px;
+    padding-left: 40px;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    border: 1px solid #ddd;
+	
+}
+.verify{
+		width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    border: 1px solid #ddd;
+}
+.yanzhengma{
+	/* position: relative; */
+}
+.yanzhengma img{
+	position: relative;
+	top: 7px;
+}
+.yanzhengma span{
+	font-size: 13px;
+}
+.yanzhengma span a{
+	color: #f97d01;
+}
+label[for=checkboxid]{
+	font-size: 14px;
+	margin-right: 80px;
+}
+label[for=checkboxid2]{
+	font-size: 14px;
+	margin-right: 50px;
+}
+label[for=checkboxid] a{
+	text-decoration: underline;
+}
+label[for=checkboxid2] a{
+	text-decoration: underline;
+}
+.tiaokuan span{
+	font-size: 14px;
+}
+.reg_now{
+    width: 355px;
+    height: 45px;
+    font-size: 25px;
+    font-family: 黑体;
+    background-color: #f97d01;
+    color: #fff;
+    border: 0;
+    margin-top: 20px;
+}

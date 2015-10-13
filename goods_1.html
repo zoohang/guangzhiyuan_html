@@ -60,17 +60,62 @@
 					<div class="cat_block">
 						<p class="cat_title"><img src="images/icon.png" alt="">热门推荐</p>
 						<ul class="cat_child">
-							<li>
+							<li class="cat_goods_tuijian">
 								<a href=""><img src="images/goods_06.png" alt="" /></a>
-								<p class="">水晶</p>	
+								<p class="cat_goods_tuijian_title"><a href="">水晶</a></p>	
 							</li>
+							<li class="cat_goods_tuijian">
+								<a href=""><img src="images/goods_06.png" alt="" /></a>
+								<p class="cat_goods_tuijian_title"><a href="">水晶</a></p>	
+							</li>
+							<li class="cat_goods_tuijian">
+								<a href=""><img src="images/goods_06.png" alt="" /></a>
+								<p class="cat_goods_tuijian_title"><a href="">水晶</a></p>	
+							</li>
+						</ul>
+					</div>
+					
+					<div class="cat_block">
+						<p class="cat_title"><img src="images/icon.png" alt="">产品分类</p>
+						<ul class="cat_child">
+							<li><img src="images/goods_28.png" alt="" /><a href="">所有产品</a></li>
+							<li><img src="images/goods_28.png" alt="" /><a href="">热销产品</a></li>
+							<li><img src="images/goods_28.png" alt="" /><a href="">活动产品</a></li>
 						</ul>
 					</div>
 				</div>
 
 
 				<div class="w760 goods_list">
-
+					<div class="w760 goods_option">
+						<div class="goods_img_fangda">
+							<img src="images/goods_100.png" alt="">
+						</div>
+						<div class="goods_option_detail">
+							<p class="goods_title">水晶饰品手链男女款礼物</p>
+							<p class="goods_title_desc">水晶饰品手链男女款礼物水晶饰品手链男女款礼物</p>
+							<p class="goods_price_desc">金额：<span class="goods_price">4999</span><span style="color:#f87d01;">元</span></p>
+							<p class="option_attr">选择规格</p>
+							<div class="goods_option_row">
+								<div class="goods_option_one">12毫米白色</div>
+								<div class="goods_option_one">12毫米红色</div>
+							</div>
+							<p class="goods_num">
+								<span class="goods_num_title">数量：</span><input type="text" value="1">
+							</p>
+							<p class="goods_button">
+								<a href="javascript:addToCart(9)"><img src="images/goods_17.png" alt=""></a>
+								<a href="javascript:addToCart(9)"><img src="images/goods_19.png" alt=""></a>
+							</p>
+						</div>
+					</div>
+					<div class="w760 goods_desc">
+						<p class="goods_desc_title">课程详情</p>
+						<div class="goods_desc_info">
+							海外网10月12日电 每日邮报当地时间10月11日发布一组切尔诺贝利城现状照片，在被废弃了30年之后，这里已经被大自然所占领，茂密的树木爬满汽车，幼儿园的地面上散落着落满灰尘的洋娃娃。
+							“切尔诺贝利事件”，是一件1986年发生在前苏联统治下乌克兰境内切尔诺贝利核电站的核子反应堆事故。该事故被认为是历史上最严重的核电事故，也是首例被国际核事件分级表评为第七级事件的特大事故（目前为止第二例为2011年3月11日发生于日本福岛县的福岛第一核电站事故）。
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -104,7 +149,13 @@
 	</div>
 	<!--公共底部end-->
 	<script type="text/javascript">
-
+	$(function () {
+		$('.goods_option_one:first').addClass('option_select');
+	})
+	$('.goods_option_one').click(function () {
+		$('.goods_option_one').removeClass('option_select');
+		$(this).addClass('option_select');
+	});
 	</script>
 </body>
 </html>

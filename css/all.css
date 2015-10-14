@@ -849,3 +849,59 @@ label[for=checkboxid2] a{
 	margin-top: 10px;
 	border:0;
 }
+.cart_route{
+	margin-top: 50px;
+	padding-bottom: 5px;
+	font-family: 微软雅黑;
+	border-bottom: 2px solid #fe6732;
+}
+.cart_title{
+	font-size: 30px;
+	color: #f87d01;
+	margin-right: 30px;
+}
+.cart_route a{
+
+}
+.goon_shopping{
+	float: right;
+	margin-top: 18px;
+}
+.cart_tab_title{
+
+}
+.cart_table td{
+	border: 0;
+}
+.cart_tab_title td{
+	text-align: center;
+	font-family: 微软雅黑;
+	border-bottom: 1px solid #fe6732;
+}
+.cart_tab_title td{
+	width: 12%;
+
+}
+.cart_tab_title .cart_goods_desc{
+	width: 52%;
+
+}
+
+.cart_table_goods td{
+	padding: 15px 0;
+		text-align: center;
+		font-family: 微软雅黑;
+}
+.cart_table_goods .cart_goods_desc{
+	text-align: left;
+}
+.cart_goods_desc img{
+	float: left;
+}
+.cart_goods_desc .cart_goods_title{
+	float: right;
+	width: 400px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+}
+

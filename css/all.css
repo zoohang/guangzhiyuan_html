@@ -849,6 +849,7 @@ label[for=checkboxid2] a{
 	margin-top: 10px;
 	border:0;
 }
+
 .cart_route{
 	margin-top: 50px;
 	padding-bottom: 5px;
@@ -870,6 +871,10 @@ label[for=checkboxid2] a{
 .cart_tab_title{
 
 }
+.cart_table{
+	    border-spacing: 0;
+    border-collapse: collapse;
+}
 .cart_table td{
 	border: 0;
 }
@@ -888,9 +893,10 @@ label[for=checkboxid2] a{
 }
 
 .cart_table_goods td{
-	padding: 15px 0;
+	padding: 29px 0;
 		text-align: center;
 		font-family: 微软雅黑;
+		border-bottom: 1px solid #eee;
 }
 .cart_table_goods .cart_goods_desc{
 	text-align: left;
@@ -903,5 +909,32 @@ label[for=checkboxid2] a{
 	width: 400px;
 	font-family: 微软雅黑;
 	font-size: 14px;
+	line-height: 26px;
 }
+.cart_result{
+	width: 450px;
+	float: right;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.cart_price_result{
+	float: left;
+}
+.cart_jiesuan_btn{
+	float: right;
 
+}
+.cart_price_result{
+	font-family: 微软雅黑;
+	margin-top: 5px;
+}
+.cart_goods_num{
+	font-size: 20px;
+	color: #f87d01;
+	
+}
+.cart_total_price{
+	font-size: 30px;
+	margin-left: 10px;
+	color: #f87d01;
+}

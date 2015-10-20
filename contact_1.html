@@ -71,33 +71,94 @@
 				</div>
 				<div class="contact_right">
 					<p class="contact_title">留言板</p>
-					<div class="form_control">
-						<p class="liuyan_title">姓名：</p>
-						<input type="text">
-					</div>
-					<div class="form_control">
-						<p class="liuyan_title">电话：</p>
-						<input type="text">
-					</div>
-					<div class="form_control">
-						<p class="liuyan_title">邮箱：</p>
-						<input type="text">
-					</div>
-					<div class="form_control">
-						<p class="liuyan_title">主题：</p>
-						<input type="text" class="liuyan_theme">
-					</div>
-					<div class="form_control">
-						<p class="liuyan_title">主题：</p>
-						<textarea name=""></textarea>
-					</div>
-					<div class="form_control">
-						<input type="submit" class="liuyan_submit" value="提交">
-					</div>
+					<form action="message.php" method="post" name="formMsg" onSubmit="return submitMsgBoard(this)">
+						<div class="form_control">
+							<p class="liuyan_title">姓名：</p>
+				     <input type="text" name="anonymous">
+						</div>
+						<div class="form_control">
+							<p class="liuyan_title">电话：</p>
+							<input type="text" name="tel">
+						</div>
+						<div class="form_control">
+							<p class="liuyan_title">邮箱：</p>
+							<input name="user_email" type="text" />
+						</div>
+						
+						<div class="form_control">
+							<input name="msg_type" type="radio" value="0" checked="checked" style="display:none" />
+							<p class="liuyan_title">主题：</p>
+							<input type="text" class="msg_title">
+						</div>
+						<div class="form_control">
+							<p class="liuyan_title">内容：</p>
+							<textarea name="msg_content"></textarea>
+						</div>
+						<div class="form_control">
+							<input type="hidden" name="act" value="act_add_message" />
+							<input type="submit" class="liuyan_submit" value="提交">
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+					<script type="text/javascript">
+        {literal}
+        /**
+         * 提交留言信息
+        */
+        function submitMsgBoard(frm)
+        {
+            var msg = new Object;
+
+             msg.user_email  = frm.elements['user_email'].value;
+             msg.msg_title   = frm.elements['msg_title'].value;
+             msg.msg_content = frm.elements['msg_content'].value;
+             msg.captcha     = frm.elements['captcha'] ? frm.elements['captcha'].value : '';
+
+            var msg_err = '';
+
+            if (msg.user_email.length > 0)
+            {
+               if (!(Utils.isEmail(msg.user_email)))
+               {
+                  msg_err += msg_error_email + '\n';
+                }
+             }
+             else
+             {
+                  msg_err += msg_empty_email + '\n';
+             }
+            if (msg.msg_title.length == 0)
+            {
+                msg_err += msg_title_empty + '\n';
+            }
+            if (frm.elements['captcha'] && msg.captcha.length==0)
+            {
+                msg_err += msg_captcha_empty + '\n'
+            }
+            if (msg.msg_content.length == 0)
+            {
+                msg_err += msg_content_empty + '\n'
+            }
+            if (msg.msg_title.length > 200)
+            {
+                msg_err += msg_title_limit + '\n';
+            }
+
+            if (msg_err.length > 0)
+            {
+                alert(msg_err);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        {/literal}
+        </script>
 
 
 	<!--公共底部start-->
